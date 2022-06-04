@@ -1,13 +1,157 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(90deg, #4300f5, #3000b5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 100px;
+  padding: 120px 0;
+}
+
+.container .form {
+  color: #f0f0f0;
+  background: #07001d;
+  width: 60%;
+  min-height: 75vh;
+  border-radius: 20px;
+  padding: 22px;
+}
+
+.container .form h1 {
+  text-align: center;
+}
+
+.container .form hr {
+  margin: 10px 0;
+  margin-bottom: 15px;
+}
+
+.container .form form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .form form .input-container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.container .form form .input-container .input {
+  height: 35px;
+  padding: 10px 12px;
+  font-size: 1em;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  color: #07001d;
+}
+
+.container .form form .input-container .input:focus {
+  outline: none;
+  border-color: rgba(67, 0, 245, 0.6);
+}
+
+.container .form form .input-container .submit-btn {
+  background: #b81208;
+  height: 40px;
+  border: 2px solid #b81208;
+  border-radius: 5px;
+  color: #f0f0f0;
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.container .form form .input-container .submit-btn:hover {
+  background: transparent;
+  color: #b81208;
+}
+
+.container .estados-cidades {
+  width: 60%;
+  background: #07001d;
+  border-radius: 20px;
+  padding: 22px;
+  color: #f0f0f0;
+}
+
+.container .estados-cidades h1 {
+  text-align: center;
+}
+
+.container .estados-cidades hr {
+  margin: 16px 0;
+}
+
+.container .estados-cidades .select-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  height: 120px;
+}
+
+.container .estados-cidades .select-container select {
+  background: #f0f0f0;
+  color: #07001d;
+  height: 60px;
+  font-size: 24px;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  padding: 0 20px;
+  cursor: pointer;
+}
+
+.container .estados-cidades .select-container select:focus {
+  outline: none;
+}
+
+.container .estados-cidades .select-container select option {
+  background: #f0f0f0;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.container .estados-cidades .button-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.container .estados-cidades .button-container button {
+  background: #b81208;
+  color: #f0f0f0;
+  border: 2px solid #b81208;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: 500;
+  width: 150px;
+  height: 55px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  margin-bottom: 40px;
+  margin-top: 15px;
+}
+
+.container .estados-cidades .button-container button:hover {
+  background: none;
+  color: #b81208;
 }
